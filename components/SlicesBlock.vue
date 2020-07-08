@@ -22,6 +22,10 @@
             <template v-else-if="slice.slice_type === 'image_highlight'">
                 <image-highlight :slice="slice"/>
             </template>
+            <!-- Embed video slice component -->
+            <template v-else-if="slice.slice_type === 'embed_video'">
+                <video-slice :slice="slice"/>
+            </template>
         </section>
     </div>
 </template>
@@ -33,6 +37,7 @@ const QuoteSlice = () => import("./slices/QuoteSlice.vue");
 const FullWidthImage = () => import("./slices/FullWidthImage.vue");
 const ImageGallery = () => import("./slices/ImageGallery.vue");
 const ImageHighlight = () => import("./slices/ImageHighlight.vue");
+const VideoSlice = () => import("./slices/VideoSlice.vue");
 
 export default {
   props: ['slices'],
@@ -42,7 +47,8 @@ export default {
     QuoteSlice,
     FullWidthImage,
     ImageGallery,
-    ImageHighlight
+    ImageHighlight,
+    VideoSlice
   },
 }
 </script>

@@ -1,8 +1,6 @@
 <template>
   <footer class="footer">
-    <a href="https://prismic.io" target="_blank" rel="noopener">
-      <img class="logo" src="../assets/img/prismic-logo.svg" alt="Prismic">
-    </a>
+    <h2>Kecamatan Manyeuw</h2>
   </footer>
 </template>
 

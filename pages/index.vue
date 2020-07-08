@@ -21,7 +21,7 @@ export default {
   },
   head () {
     return {
-      title: 'Prismic Nuxt.js Multi Page Website',
+      title: 'Manyeuw',
     }
   },
   async asyncData({ $prismic, error }) {
