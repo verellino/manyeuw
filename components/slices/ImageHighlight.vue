@@ -1,10 +1,10 @@
 <template>
   <section class='highlight content-section'>
     <div class="highlight-left">
-      <prismic-rich-text :field="slice.primary.title"/>
-      <prismic-rich-text :field="slice.primary.headline"/>
+      <prismic-rich-text class="ylttl" :field="slice.primary.title"/>
+      <prismic-rich-text :field="slice.primary.richtext"/>
       <p>
-        <prismic-link :field="slice.primary.link">{{ $prismic.asText(slice.primary.link_label) }}</prismic-link>
+        <prismic-link :field="slice.primary.link">{{ $prismic.asText(slice.primary.link_label) }} ›</prismic-link>
       </p>
     </div>
     <div class="highlight-right">
@@ -22,22 +22,43 @@ export default {
 
 <style lang="sass" scoped>
 .highlight
+  padding-top: 20px
   position: relative
   overflow: auto
-
+  
 .highlight-left
-  width: 43%
+  width: 50%
   float: left
+  position: absolute
+  z-index: 2
+  padding: 30px 20px 0
+  background: #efdc7c
+  a
+    color: #000000
+  a:hover
+    color: #0A2B43
 
 .highlight-right
-  width: 48%
+  width: 90%
   float: right
+  margin-top: 50px
+  img
+    width: 100%
+
 
 @media (max-width: 767px)
   .content-section
     margin-bottom: 2rem
+  .highlight
+    overflow: none
+ 
   .highlight-left, .highlight-right
-    width: 100%
+    position: relative
+    width: fit-content
     float: none
+  .highlight-left
+    padding: 20px 20px 5px
+  .highlight-right
+    margin-top: 20px
 </style>
 

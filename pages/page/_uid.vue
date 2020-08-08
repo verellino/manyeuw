@@ -1,6 +1,7 @@
 <template>
   <section>
     <!-- Slices block component -->
+    <h1 class="page-title container">{{$prismic.asText(title)}}</h1>
     <slices-block :slices="slices"/>
   </section>
 </template>
@@ -16,7 +17,7 @@ export default {
   },
   head () {
     return {
-      title: 'Prismic Nuxt.js Multi Page Website',
+      title: 'MANYEUW',
     }
   },
   async asyncData({ $prismic, params, error }) {
@@ -26,6 +27,7 @@ export default {
 
       return {
         // Set slices as variable
+        title: document.title,
         slices: document.page_content
       }
     } catch (e) {
@@ -35,3 +37,10 @@ export default {
   },
 }
 </script>
+<style scoped>
+.page-title{
+  margin: 40px auto 20px;
+  width: 100%;
+  
+}
+</style>

@@ -17,7 +17,7 @@ export default {
   },
   head () {
     return {
-      title: 'Prismic Nuxt.js Multi Page Website',
+      title: 'Manyeuw',
     }
   },
   // Called before rendering the layout (even for error page)

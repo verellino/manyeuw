@@ -7,9 +7,9 @@
         </h2>
         <!-- Template for page tagline. -->
         <p class="banner-description">{{ $prismic.asText(banner.tagline) }}</p>
-        <prismic-link class="banner-button" :field="banner.button_link">
+        <!-- <prismic-link class="banner-button" :field="banner.button_link">
           {{ $prismic.asText(banner.button_label) }}
-        </prismic-link>
+        </prismic-link> -->
       </div>
     </section>
 </template>
@@ -23,22 +23,22 @@ export default {
 
 <style lang="sass" scoped>
 .homepage-banner
+  width: 100%
   margin: -70px 0 80px
-  padding: 10em 0 8em
+  padding: 20em 0 2em
   background-position: center center
   background-size: cover
   color: #ffffff
   line-height: 1.75
-  text-align: center
+  text-align: left
 
 .banner-content
-  text-align: center
-
+  text-align: left
+  padding: 0 20px
+  
 .banner-title, .banner-description
   width: 90%
-  max-width: 490px
-  margin-left: auto
-  margin-right: auto
+  max-width: 800px
 
 .banner-title
   color: #ffffff
@@ -58,9 +58,11 @@ export default {
 
 @media (max-width: 767px)
   .homepage-banner
-    margin: 0 0 40px
-    padding: 10em 0 6em
+    margin: 0 0 25px
+    padding: 20em 0 0.5em
+  .banner-content
+    padding-left: 20px
   .banner-title
-    font-size: 50px
-    line-height: 50px
+    font-size: 42px
+    line-height: 40px
 </style>
