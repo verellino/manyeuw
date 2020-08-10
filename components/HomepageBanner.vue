@@ -25,7 +25,7 @@ export default {
 .homepage-banner
   width: 100%
   margin: -70px 0 80px
-  padding: 20em 0 2em
+  padding: 30em 0 2em
   background-position: center center
   background-size: cover
   color: #ffffff

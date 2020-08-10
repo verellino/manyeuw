@@ -31,7 +31,7 @@ export default {
   float: left
   position: absolute
   z-index: 2
-  padding: 30px 20px 0
+  padding: 40px 30px 10px
   background: #efdc7c
   a
     color: #000000

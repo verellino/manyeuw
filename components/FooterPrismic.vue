@@ -1,13 +1,15 @@
 <template>
-  <footer class="footer">
-    <div class="logo"></div>
-    <h2>Kecamatan Manyeuw</h2>
-    <ul class="footer-links">
-        <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
-          <prismic-link :field="menuLink.link">{{ $prismic.asText(menuLink.label) }}</prismic-link>
-        </li>
-    </ul>
-  </footer>
+  <div class="bg-yellow">
+    <footer class="footer">
+      <div class="logo"></div>
+      <h2>Manyeuw</h2>
+      <ul class="footer-links">
+          <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
+            <prismic-link :field="menuLink.link">{{ $prismic.asText(menuLink.label) }}</prismic-link>
+          </li>
+      </ul>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -17,6 +19,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.bg-yellow
+  width: 100%
+  background: #efdc7c
 .footer
   padding: 40px 0
   margin: 0 auto
