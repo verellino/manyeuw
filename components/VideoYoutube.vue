@@ -23,7 +23,7 @@ export default {
 
 <style>
 .yt-section{
-    margin: 150px auto;
+    margin: 100px auto;
     text-align: center;
 }
 .ttl {
