@@ -18,11 +18,25 @@ export default {
 <style lang="sass" scoped>
 .media-sec
     display: flex
+    flex-wrap: wrap
+    text-align: center
+    justify-content: space-between
+    margin-bottom: 100px
 
 .media-item
-   width: 250px
-   margin-right: 50px
+   width: 29%
+   margin-bottom: 25px
 
+.medlink
+  width: 100%
+  h3
+    padding: 0 10px
 a:hover
     border-style: solid
+
+@media (max-width: 767px)
+  .media-sec
+    margin-bottom: 40px
+  .media-item
+    width: 100%
 </style>

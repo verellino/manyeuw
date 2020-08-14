@@ -1,5 +1,9 @@
 # MANYEUW KKN PPM UGM 2020
 
-## Manyeuw will take over the world
+Website untuk Kecamatan Manyeuw. Dalam rangka Program Kerja KKN UGM.
 
-> Sofi the best 🍺
+
+
+
+
+Made with Nuxt.js + Prismic

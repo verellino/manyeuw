@@ -44,6 +44,9 @@ export default {
     margin: 20px 0;
 }
 @media (max-width: 767px)  {
+    .yt-section{
+        margin: 40px auto;
+    }
     .video-youtube{
         display: flex;
         flex-direction: column;

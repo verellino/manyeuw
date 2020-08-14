@@ -23,8 +23,8 @@ export default {
 
 <style lang="sass" scoped>
 .homepage-banner
-  width: 100%
-  margin: -70px 0 80px
+  width: calc(100% + 40px)
+  margin: -90px -20px 80px
   padding: 30em 0 2em
   background-position: center center
   background-size: cover
@@ -58,8 +58,9 @@ export default {
 
 @media (max-width: 767px)
   .homepage-banner
-    margin: 0 0 25px
-    padding: 20em 0 0.5em
+    width: 100%
+    margin: 0 0 20px
+    padding: 20em 0 2em
   .banner-content
     padding-left: 20px
   .banner-title
