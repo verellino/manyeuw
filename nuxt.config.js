@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt + Prismic showcase' }
+      { hid: 'description', name: 'description', content: 'Manyeuw merupakan Kecamatan di Kepulauan Kei dengan potensi belum tersalurkan untuk dikembangkan. ' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -21,7 +21,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#efdc7c' },
 
   /*
   ** Global CSS

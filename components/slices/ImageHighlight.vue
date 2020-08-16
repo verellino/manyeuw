@@ -31,7 +31,7 @@ export default {
   float: left
   position: absolute
   z-index: 2
-  padding: 30px 20px 0
+  padding: 40px 30px 10px
   background: #efdc7c
   a
     color: #000000
@@ -49,16 +49,17 @@ export default {
 @media (max-width: 767px)
   .content-section
     margin-bottom: 2rem
-  .highlight
-    overflow: none
  
   .highlight-left, .highlight-right
     position: relative
-    width: fit-content
     float: none
+    overflow: none
+
   .highlight-left
-    padding: 20px 20px 5px
+    width: 100%
+    padding: 20px
+
   .highlight-right
-    margin-top: 20px
+    margin-top: 10px
 </style>
 

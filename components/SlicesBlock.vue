@@ -26,6 +26,10 @@
             <template v-else-if="slice.slice_type === 'embed_video'">
                 <video-slice :slice="slice"/>
             </template>
+            <!-- Media link download slice component -->
+            <template v-else-if="slice.slice_type === 'link'">
+                <media-link :slice="slice"/>
+            </template>
         </section>
     </div>
 </template>
@@ -38,6 +42,7 @@ const FullWidthImage = () => import("./slices/FullWidthImage.vue");
 const ImageGallery = () => import("./slices/ImageGallery.vue");
 const ImageHighlight = () => import("./slices/ImageHighlight.vue");
 const VideoSlice = () => import("./slices/VideoSlice.vue");
+const MediaLink = () => import("./slices/MediaLink.vue");
 
 export default {
   props: ['slices'],
@@ -48,7 +53,8 @@ export default {
     FullWidthImage,
     ImageGallery,
     ImageHighlight,
-    VideoSlice
+    VideoSlice,
+    MediaLink
   },
 }
 </script>
